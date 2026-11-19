@@ -1,49 +1,23 @@
-<html lang="pt-BR">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Nossa Equipe | DescPlus</title>
-	</head>
-	<body>
-		<header>
-			<strong>DescPlus</strong>
-			<nav>
-				<ul>
-					<li><a href="/">Início</a></li>
-					<li><a href="/sobre">Sobre</a></li>
-					<li><a href="/equipe">Equipe</a></li>
-					<li><a href="/contato">Contato</a></li>
-				</ul>
-			</nav>
-		</header>
+---
+import LayoutBase from '../layouts/LayoutBase.astro';
+import { empresa } from '../data/empresa.js';
+---
 
-		<main>
-			<section>
-				<h1>Nossa Equipe Técnica</h1>
-				<p>Conheça os profissionais que transformam requisitos de negócio em soluções de software seguras e escaláveis</p>
-				<ul>
-					<li>
-						<h2>Francisca Geyciane</h2>
-						<strong>Desenvolvedora Full Stack</strong>
-						<p>Fundadora da DescPlus,Desenvolve sistemas e aplicações, cuidando tanto da parte visual quanto da programação interna.</p>
-					</li>
-					<li>
-						<h2>Dulce Maria</h2>
-						<strong>Designer UX/UI</strong>
-						<p>Cria interfaces modernas e intuitivas, proporcionando uma experiência agradável aos usuários.</p>
-					</li>
-					<li>
-						<h2>Fernando Dias</h2>
-						<strong>Analista de Sistemas</strong>
-						<p>Analisa necessidades, planeja soluções e garante que os sistemas atendam aos requisitos dos clientes.</p>
-					</li>
-				</ul>
-			</section>
-		</main>
-
-		<footer>
-			<p>&copy; 2026 DescPlus. Todos os direitos reservados.</p>
-		</footer>
-	</body>
-</html>
+<LayoutBase 
+	titulo="Nossa Equipe" 
+	descricao={`Conheça os profissionais por trás da ${empresa.nome}.`}
+>
+	<section>
+		<h1>Nossa Equipe Técnica</h1>
+		<p>Conheça os profissionais que transformam requisitos de negócio em soluções de software seguras e escaláveis</p>
+		<ul>
+			{empresa.equipe.map((membro) => (
+				<li>
+					<h2>{membro.nome}</h2>
+					<strong>{membro.cargo}</strong>
+					<p>{membro.descricao}</p>
+				</li>
+			))}
+		</ul>
+	</section>
+</LayoutBase>
