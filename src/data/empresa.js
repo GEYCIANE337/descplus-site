@@ -38,21 +38,21 @@ export const empresa = {
     {
       nome: "Francisca Geyciane",
       cargo: "Desenvolvedora e Full Stack",
-      foto: "/images/wanderson.jpg",
+      foto: "/images/Geyciane.jpg",
       alt: "Foto de Francisca Geyciane",
-      descricao: "Fundadora da DescPlus,Desenvolve sistemas e aplicações, cuidando tanto da parte visual quanto da programação interna."
+      descricao: "Desenvolve sistemas e aplicações, cuidando tanto da parte visual quanto da programação interna."
     },
     {
       nome: "Dulce Maria",
       cargo: "Designer e UX/UI",
-      foto: "/images/sheldon.jpg",
+      foto: "/images/Dulce.jpg",
       alt: "Foto de Dulce maria",
       descricao: "Cria interfaces modernas e intuitivas, proporcionando uma experiência agradável aos usuários."
     },
     {
       nome: "Fernando Dias",
       cargo: "Analista de Sistemas",
-      foto: "/images/amy.jpg",
+      foto: "/images/Fernando.jpg",
       alt: "Foto de Fernando Dias",
       descricao: "Analisa necessidades, planeja soluções e garante que os sistemas atendam aos requisitos dos clientes."
     }
