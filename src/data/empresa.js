@@ -55,6 +55,13 @@ export const empresa = {
       foto: "/images/Fernando.jpg",
       alt: "Foto de Fernando Dias",
       descricao: "Analisa necessidades, planeja soluções e garante que os sistemas atendam aos requisitos dos clientes."
+    },
+     {
+      nome: "Arthur Albuquerque",
+      cargo: "Desenvolvedor Back-End",
+      foto: "/images/Arthur.jpg",
+      alt: "Foto de Arthur Albuquerque",
+      descricao: "Desenvolve a parte interna dos sistemas, gerencia bancos de dados e servidores, garantindo o funcionamento da empresa."
     }
   ]
 };
